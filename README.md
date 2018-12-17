@@ -1,44 +1,108 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# To Do
 
-## Available Scripts
+## Context
 
-In the project directory, you can run:
+Everybody need things to do. Specially when you are a person with not a good memory. You have learned awesome features from React.js needed in the real world life.
 
-### `npm start`
+## The Assignment
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Create a To Do application.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Setup Instructions
 
-### `npm test`
+```sh
+#(1) Create a project
+create-react-app todoapp
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#(2) Go to the project
+cd todoapp
 
-### `npm run build`
+#(3) Start the server
+npm start
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Deliverables
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
++ A GitHub repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Requeriments
 
-### `npm run eject`
+### Sprint 1 | Basic Project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You can work in one component, make sure to respect the structure and create a good markup witj JSX objects. _For filters (left side) I’m buttons._
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Sprint 2 | Date
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Show the correct date.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Use `Date` object from JavaScript native to get the current date.
 
-## Learn More
++ [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Sprint 3 | Create New Task
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a basic form with an `input` and `button`. You’ll need to save that information in the State, and for each task you need an `id`, `name`, `completed`.
+
+Remember that each new task is marked as uncompleted, so: `completed: false`.
+
+### Sprint 4 | List All Tasks
+
+Iterate over your State and print all Tasks in the DOM. You will need to add a `checkbox` for each Task you have.
+
+### Sprint 5 | Check for Completed Tasks
+
+Work with events on _checkboxes_. If you click in an uncompleted task you should grab that id, find it on the list, and change its value (completed) from false to true.
+
+Also, as a way to give feedback you need to add an opacity of 50% to the element.
+
+_You may take advantage from `Object.assign()` and probably you will need to merge that new task into the State property you handle_.
+
+### Sprint 6 | Filter by “All”, “Complete” and “Incomplete”
+
+It’s time to filter our tasks, if you click on any of three buttons you should see Tasks related to that filter.
+
+### Sprint 7 | Search by
+
+What about implementing a search? Yes! Filter tasks by name acoording to the value typed in the search box.
+
+### Sprint 8 | Validate Inputs
+
+Your app should not be able to save a task without a name. Handle in the State the error and show it as a feedback.
+
+### Sprint 9 | BONUS | Saving twice
+
+Don’t let the user save two tasks with the same name.
+
+### Sprint 10 | BONUS | Edit Task Name
+
+Ups! I made a mistake writing my Task. Can I change the name?
+
+### Sprint 11 | BONUS | Remove Task from List
+
+I’m not more interested in saving tasks after completed, I want to remove them.
+
+### Sprint 12 | BONUS | Add “Date” to each Task
+
+You learnt how to handle dates, add a new input to save the date you want to finish your task. And display it next to Task name.
+
+### Sprint 13 | BONUS | Mark as Uncompleted
+
+If you have a task checked as done, you can also mark as uncompleted.
+
+## Expected Results
+
+### Normal Mode
+
+![ToDo Demo](TodoLab.mov)
+
+### Explorer Mode
+
+![ToDo Explorer Mode Demo](TodoLabExplorer.mov)
+
+### Adventure Mode
+
+![ToDo Adventure Mode Demo](TodoLabAdventure.mov)
+
+#### About the Design
+
+If you are struggling with design, focus on basic structure.
