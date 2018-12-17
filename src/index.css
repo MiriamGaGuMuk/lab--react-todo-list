@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=cyrillic,cyrillic-ext');
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    background: linear-gradient(
+        to right, 
+      papayawhip 0%, 
+      thistle 100%
+    );
+}
+
+.container {
+  display: flex;
+}
+
+
+/*Sidebar*/
+.sidebar{
+  display: flex;
+  order: 1;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 25%;
+  margin-top: 20%;
+  /* margin-left: 5px; */
+}
+
+#searchFor{
+  font-family: 'Fira Sans', sans-serif;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: #43494e;
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+  
+}
+
+.sidebar__button {
+    font-family: 'quicksand';
+    background: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.4em;
+    padding: 0 10px;
+    line-height: 50px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+}
+
+.sidebar__button:hover {
+    box-sizing: border-box;
+    box-shadow: 0 0 2px black;
+}
+
+.deleteAll {
+    
+    margin-right: 0;
+}
+
+.active {
+    border: 2px solid black;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px black;
+    font-weight: bold;
+} 
+
+.disabled{
+    text-decoration: line-through;
+}
+
+
+/*Header*/
+.Headers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  order: 2;
+  width: 50%; 
+  
+}
+.header{
+  display: block;
+  left: 60%;
+  color: #43494e;
+  font-family: 'quicksand';
+  font-weight: 30px;
+}
+
+
+
+/*Form*/
+
+.form{
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  width: 50%;
+  margin-left: 25px;
+
+}
+
+.form__input {
+  order: 2;  
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.4em;
+  height: 40px;
+  padding: 0 10px;
+  width: 500px;
+  outline: none;
+}
+
+/*TODO*/
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4em;
+  width: 50%;
+  order: 3;
+}
+
+.todo-item {
+  /* flex-direction: column; */
+  border-bottom: 2px solid #837c7c;
+  cursor: pointer;
+  line-height: 40px;
+}
+
+.todo-item__delete-button {
+  float: right;
+  text-align: center;
+  width: 30px;
+  font-size: 25px;
+  color: red;
+}
+
